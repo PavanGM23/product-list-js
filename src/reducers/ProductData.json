@@ -1,0 +1,40 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "Product1",
+            "rate": "1100",
+            "quality": "2"
+        },
+        {
+            "id": 2,
+            "name": "Product2",
+            "rate": "1300",
+            "quality": "1"
+        },
+        {
+            "id": 3,
+            "name": "Product3",
+            "rate": "2300",
+            "quality": "1"
+        },
+        {
+            "id": 4,
+            "name": "Product4",
+            "rate": "3400",
+            "quality": "3"
+        },
+        {
+            "id": 5,
+            "name": "Product5",
+            "rate": "3450",
+            "quality": "2"
+        },
+        {
+            "id": 6,
+            "name": "Product6",
+            "rate": "5600",
+            "quality": "3"
+        }
+    ]
+}
