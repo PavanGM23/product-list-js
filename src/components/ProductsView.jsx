@@ -28,7 +28,7 @@ class ProductsView extends React.Component {
     }
 
     render() {
-        const { productData, isModalOpen, productListData } = this.props;
+        const { productData, isModalOpen, productListData, addProductAction } = this.props;
         return (
             <div>
                 <table class="table table-hover">
@@ -60,6 +60,7 @@ class ProductsView extends React.Component {
                     isModalOpen={isModalOpen}
                     productListData={productListData}
                     closeModal={this.closeModal}
+                    addProductAction={addProductAction}
                 />
 
             </div>

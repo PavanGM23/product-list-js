@@ -24,6 +24,7 @@ class ProductContainer extends React.Component {
                 isModalOpen={isModalOpen}
                 modalViewCallback={productActions.modalViewAction}
                 productListData={productListData}
+                addProductAction={productActions.addProductAction}
                 />
             </div>
 

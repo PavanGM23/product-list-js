@@ -24,3 +24,14 @@ export function modalViewAction(isModalOpen){
         }
     }
 }
+
+export function addProductAction(products){
+    return {
+        type: actionTypes.ADD_PRODUCTS,
+        data:{
+            products
+        }
+    }
+}
+
+

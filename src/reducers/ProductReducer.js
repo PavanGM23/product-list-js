@@ -1,5 +1,5 @@
 import * as actionTypes from '../actions/ActionTypes';
-import { removeProduct } from '../selectors/ProductSelector';
+import { removeProduct, addProduct, removeProductFromModal } from '../selectors/ProductSelector';
 const productData = require('./ProductData');
 const newProductsData = require('./ProductsList');
 
@@ -27,6 +27,11 @@ const prodReducer = (state = {
 
         case actionTypes.MODAL_VIEW:
             newState.isModalOpen = action.data.isModalOpen;
+            return newState;
+
+        case actionTypes.ADD_PRODUCTS:
+            newState.productData = addProduct(action.data.products, newState.productData, newState.productListData);
+            newState.productListData = removeProductFromModal(action.data.products, newState.productListData);
             return newState;
 
         default:
